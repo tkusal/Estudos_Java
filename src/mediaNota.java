@@ -1,5 +1,3 @@
-import javax.print.event.PrintEvent;
-import javax.swing.SingleSelectionModel;
 import java.util.Scanner;
 
 public class mediaNota {
@@ -23,5 +21,7 @@ public class mediaNota {
             System.out.println("Reprovado");
         }
         System.out.println("A média é: " + media);
+
+        sc.close();
     }
 }
