@@ -12,6 +12,15 @@ public class mediaNota {
         System.out.println("Digite a segunda nota: ");
         nota2 = sc.nextFloat();
 
+        media = calculaMedia(nota1, nota2);
+        System.out.println("A média é: " + media);
+
+        sc.close();
+    }
+
+    public static float calculaMedia(float nota1, float nota2) {
+        float media;
+
         media = (nota1 + nota2)/2;
         if (media >= 80){
             System.out.println("Aprovado");
@@ -20,8 +29,8 @@ public class mediaNota {
         } else {
             System.out.println("Reprovado");
         }
-        System.out.println("A média é: " + media);
 
-        sc.close();
+        return media;
+
     }
 }
